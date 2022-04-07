@@ -1,13 +1,4 @@
-#rainbow{
-    height: 100%;
-    width: 100%;
-    left:0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    justify-content: center;
-    display: flex;
+html {
     background: linear-gradient(124deg, #1ddde8, #dd00f3);
     background-size: 1800% 1800%;
 
@@ -38,28 +29,35 @@
     100%{background-position:0% 82%}
 }
 
-#rainbow .center {
-    position: absolute;
+#rainbow{
+    height: 90vh;
+    width: 90%;
+    justify-content: center;
     display: flex;
+}
+
+.center {
+    position: absolute;
     top: 50%;
 }
 
-#rainbow .center button {
-    padding: 0;
+#pressme {
+    transition: 0.3s ease-in-out;
+    position: absolute;
+    margin: 0 10px;
+    padding: 10px 30px;
     border: 0;
     border-radius: 25px;
-    background: inherit;
     background-color: white;
     cursor: pointer;
     outline: none;
     width: 100px;
     height: 30px;
-    transition: 0.5s;
     box-shadow: 0.5px 0.5px 1px #000000;
+    font-family:'Oswald',sans-serif;font-size:15px;font-style:normal;font-weight:400;text-transform:uppercase;padding:0;margin:-5px 0 -3px 0;text-align:center;letter-spacing:.05em;color:black;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-backface-visibility:hidden;backface-visibility:hidden
 }
 
-#rainbow .center button:hover {
+#pressme:hover {
     box-shadow: 2px 2px 4px #000000;
+    transform: scale(1.1);
 }
-
-.pressme{font-family:'Oswald',sans-serif;font-size:15px;font-style:normal;font-weight:400;text-transform:uppercase;padding:0;margin:-5px 0 -3px 0;text-align:center;letter-spacing:.05em;color:black;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-text-size-adjust:100%;-moz-text-size-adjust:100%;-ms-text-size-adjust:100%;-webkit-backface-visibility:hidden;backface-visibility:hidden}
